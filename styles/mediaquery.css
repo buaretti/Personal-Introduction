@@ -1,8 +1,16 @@
 /* Media queries para dispositivos pequenos */
 @media screen and (max-width: 576px) {
+
+    #p1{
+        max-width: 375px; 
+        margin: 0 auto;
+    }
+
     .projeto img{
         width: 350px;
     }
+
+    
 }
 
 /* Media queries para dispositivos médios */

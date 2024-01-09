@@ -6,6 +6,7 @@
     --cor3: #1B7EA6;
     --cor4: #032F40;
     --cor5: #165F8C;
+    --cor6: #00000074;
   }
 
 html, body, h1, h2, h3, p, ul, li {
@@ -22,9 +23,17 @@ body {
     box-sizing: border-box;
 }
 
+h2{
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 16px;
     color: black;
+}
+
+#p1{
+    color: #f2f2f2c9;
 }
 
 header {
@@ -32,10 +41,13 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.454);
 }
 
 #minhafoto{
     width: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.454);
 }
 
 .projeto img{
@@ -44,6 +56,11 @@ header {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.454);
 }
 
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    color: var(--cor2);
+  }
+
 nav {
     position: fixed;
 }
@@ -51,7 +68,8 @@ nav ul {
     list-style: none;
 }
 nav li {
-    margin-bottom: 10px;
+    margin-left: 410px;
+    transform: translateY(-200px);
 }
 main {
     padding: 20px;
@@ -62,7 +80,13 @@ section {
     padding: 20px;
     border: 1px solid #ddd;
     background-color: var(--cor1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.454);
+    border-radius: 5px;
 }
 
-
-
+footer{
+    color: gray;
+    text-align: center;
+    background-color: #032F40;
+    padding-bottom: 45px;
+}
