@@ -1,0 +1,15 @@
+/* Media queries para dispositivos pequenos */
+@media screen and (max-width: 576px) {
+}
+
+/* Media queries para dispositivos médios */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+}
+
+/* Media queries para dispositivos grandes */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* Media queries para dispositivos extra grandes */
+@media screen and (min-width: 1201px) {
+}
