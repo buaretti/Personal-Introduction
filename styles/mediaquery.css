@@ -1,25 +1,38 @@
 /* Media queries para dispositivos pequenos */
 @media screen and (max-width: 576px) {
 
-    #p1{
-        max-width: 375px; 
-        margin: 0 auto;
+    header{
+        padding: 50px;
     }
 
-    .projeto img{
-        width: 100%;
-        height: auto;
-        display: block;
+    #container{
+        max-width: 220px;
+    }
+
+    #minhafoto{
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 2.5em;
     }
     
+    header h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #p1{
+        font-size: 18px;
+
+    }
     
 }
 
 /* Media queries para dispositivos médios */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .projeto img{
-        width: 400px;
-    }
+
 
 }
 
