@@ -1,37 +1,10 @@
 /* Media queries para dispositivos pequenos */
 @media screen and (max-width: 576px) {
 
-    header{
-        padding: 50px;
-    }
-
-    #container{
-        max-width: 220px;
-    }
-
-    #minhafoto{
-        margin-bottom: 20px;
-    }
-
-    h1{
-        font-size: 8vw;
-    }
-    
-    header h2{
-        font-size: 4.4vw;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    
-    #p1{
-        font-size: 3.6vw;
-    }
-    
 }
 
 /* Media queries para dispositivos médios */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-
 
 }
 
@@ -42,5 +15,5 @@
 
 /* Media queries para dispositivos extra grandes */
 @media screen and (min-width: 1201px) {
-
+    
 }
