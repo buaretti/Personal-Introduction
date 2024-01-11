@@ -52,10 +52,10 @@ h2 {
 }
 
 h3 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 4vw;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 4vw;
 }
 
 p {
@@ -105,14 +105,67 @@ header {
 
 nav {
   position: fixed;
-  display: none;
 }
+
+.floating-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.floating-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.floating-menu li {
+  margin: 0 10px;
+}
+
+.menu-icon {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon.open span {
+  transform: rotate(180deg);
+}
+
+.menuitens {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.menuitens.show {
+  opacity: 1;
+}
+
+.menuitens:hover{
+  border-bottom: 2px solid var(--cor2);
+  transition: border-bottom 0.3s ease-in-out;
+}
+
 nav ul {
   list-style: none;
 }
 nav li {
-  margin-left: 410px;
-  transform: translateY(-200px);
+  transform: translateY(-600px);
 }
 main {
   padding: 20px;
@@ -142,54 +195,77 @@ section {
   text-shadow: 1px 1px 10px var(--cor6);
 }
 #botaoprojeto2 {
-    text-align: center;
-    background-color: var(--cor3);
-    border-radius: 5px;
-    width: 170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    color: var(--cor1);
-    margin-bottom: 100px;
-    text-shadow: 1px 1px 10px var(--cor6);
+  text-align: center;
+  background-color: var(--cor3);
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--cor1);
+  margin-bottom: 100px;
+  text-shadow: 1px 1px 10px var(--cor6);
 }
 #botaogithub {
-    text-align: center;
-    background-color: var(--cor3);
-    border-radius: 5px;
-    width: 170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px var(--cor6);
+  text-align: center;
+  background-color: var(--cor3);
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--cor1);
+  text-shadow: 1px 1px 10px var(--cor6);
 }
 
-#botaogithub:hover, #botaoprojeto1:hover, #botaoprojeto2:hover{
-    background-color: #165f8c;
-    font-weight: bolder;
-    transform: translateY(-2px)
+#botaogithub:hover,
+#botaoprojeto1:hover,
+#botaoprojeto2:hover {
+  background-color: #165f8c;
+  font-weight: bolder;
+  transform: translateY(-2px);
 }
 
-#botaogithub:active, #botaoprojeto1:active, #botaoprojeto2:active{
-    background-color: #165f8c;
-    font-weight: bolder;
-    transform: translateY(-2px)
+#botaogithub:active,
+#botaoprojeto1:active,
+#botaoprojeto2:active {
+  background-color: #165f8c;
+  font-weight: bolder;
+  transform: translateY(-2px);
 }
 
-#botaogithub, #botaoprojeto1, #botaoprojeto2{
-    transition: color 0.3s ease;
-    transition: font 0.3s ease;
-    transition: transform 0.3s ease;
+#botaogithub,
+#botaoprojeto1,
+#botaoprojeto2 {
+  transition: color 0.3s ease;
+  transition: font 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-a {
+section .projeto a{
   text-decoration: none;
   color: var(--cor1);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--cor1);
+}
+
+#contact a {
+  color: var(--cor3);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#contact a:hover {
+  color: #165f8c;
+  border-bottom: 2px solid #165f8c;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 footer {
