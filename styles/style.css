@@ -142,6 +142,7 @@ section {
   align-items: center;
   margin: 0 auto;
   color: var(--cor1);
+  margin-bottom: 100px;
 }
 #botaoprojeto2 {
   text-align: center;
@@ -166,6 +167,24 @@ section {
   align-items: center;
   margin: 0 auto;
   color: var(--cor1);
+}
+
+#botaogithub:hover, #botaoprojeto1:hover, #botaoprojeto2:hover{
+    background-color: #165f8c;
+    font-weight: bolder;
+    transform: translateY(-2px)
+}
+
+#botaogithub:active, #botaoprojeto1:active, #botaoprojeto2:active{
+    background-color: #165f8c;
+    font-weight: bolder;
+    transform: translateY(-2px)
+}
+
+#botaogithub, #botaoprojeto1, #botaoprojeto2{
+    transition: color 0.3s ease;
+    transition: font 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 a {
