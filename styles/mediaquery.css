@@ -7,14 +7,17 @@
     }
 
     .projeto img{
-        width: 300px;
+        width: 400px;
     }
-
+    
     
 }
 
 /* Media queries para dispositivos médios */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    .projeto img{
+        width: 400px;
+    }
 
 }
 
